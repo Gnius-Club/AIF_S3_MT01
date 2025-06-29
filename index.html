@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook Sesión 1 3º Secundaria</title>
+    <title>Playbook-S3-M01</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -11,7 +11,7 @@
 <body>
 
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook Sesión 1 3º Secundaria</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook Misión 1: ¡Hola, MicroPython!</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
                 <span id="timer">⏱️ 00:00</span>
@@ -54,7 +54,7 @@
 
             <button id="toggle-dialogues">Mostrar todos los diálogos</button>
 
-            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <!-- SECCIÓN "DE UN VISTAZO" -->
             <div class="activity-card" id="activity-0">
                 <h2><span class="book-icon">📝</span> De un Vistazo: Sesión Gnius</h2>
                 <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
@@ -62,7 +62,7 @@
                     <table>
                         <thead>
                             <tr>
-                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
+                                <th style="width: 50%;">Objetivos, Secuencia y Entregable</th>
                                 <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
                             </tr>
                         </thead>
@@ -71,7 +71,9 @@
                                 <td>
                                     <strong>Objetivos:</strong>
                                     <ul>
-                                        <li>Que los estudiantes repasen los componentes clave del microcontrolador y la placa IOTbit, comprendan las diferencias sintácticas fundamentales entre la programación por bloques y MicroPython, y utilicen Vibe Coding para generar, analizar e implementar su primer script en Python para controlar salidas básicas, entendiendo el rol de la IA como traductora de intención a código.</li>
+                                        <li>Que los estudiantes comprendan las diferencias sintácticas y conceptuales entre la programación por bloques y MicroPython, identificando la importancia de la indentación y el uso de librerías.</li>
+                                        <li>Que utilicen el Vibe Coding para traducir su intención a un script Python funcional para controlar salidas básicas en el Micro:bit/IOTbit.</li>
+                                        <li>Que analicen el código generado y realicen su primera depuración asistida por IA.</li>
                                     </ul>
                                     <strong>Secuencia de Clase:</strong>
                                     <ul>
@@ -83,41 +85,32 @@
                                     </ul>
                                     <strong>Entregable Clave:</strong>
                                     <ul>
-                                        <li>El primer script en Python para controlar salidas básicas, generado y analizado por los estudiantes con la ayuda de Xolo, demostrando su comprensión de la transición a la programación textual y el rol de la IA como traductora de intención a código.</li>
+                                        <li>Un script funcional en MicroPython, creado vía Vibe Coding, que controla una salida básica de la IOTbit.</li>
+                                        <li>Comprensión demostrada (a través de la discusión y reflexión) de conceptos clave de Python: indentación, `import`, bucles y control de pines.</li>
                                     </ul>
                                 </td>
                                 <td>
                                     <strong>Materiales Específicos:</strong>
                                     <ul>
                                         <li>Proyector o pantalla interactiva.</li>
-                                        <li>Conexión a internet estable y de buena velocidad.</li>
-                                        <li>Cuentas de alumno para las plataformas relevantes (ej. ThingSpeak).</li>
+                                        <li>Conexión a internet estable.</li>
+                                        <li>Acceso a MakeCode (<a href="https://makecode.microbit.org/" target="_blank">https://makecode.microbit.org/</a>) en modo Python.</li>
                                         <li>Chat "Agente Gnius" (Xolo) operativo.</li>
                                         <li>Presentación de diapositivas (Diapositivas 1-10).</li>
-                                        <li>1 Micro:bit v2 con placa IOTbit y cable USB por equipo de 2 estudiantes.</li>
+                                        <li>1 Micro:bit v2 con placa IOTbit y cable USB por equipo de 2.</li>
                                     </ul>
                                     <strong>Preparación Previa para ESTA Sesión:</strong>
                                     <ol>
-                                        <li><strong>Revisión del Entorno Digital y Físico (Interna):</strong>
+                                        <li><strong>Verificación del Entorno Digital y Físico (Interna):</strong>
                                             <ul>
-                                                <li>Verificar conexión a internet.</li>
-                                                <li>Confirmar acceso y funcionamiento de MakeCode (Python editor).</li>
-                                                <li>Tener kits Micro:bit v2 con IOTbit listos y organizados.</li>
-                                                <li>Tener la presentación de diapositivas (1-10) lista y en orden.</li>
-                                                <li>Probar el chat "Agente Gnius" (Xolo) para asegurar su operatividad.</li>
+                                                <li>Verificar conexión a internet y acceso a MakeCode.</li>
+                                                <li>Probar el chat "Agente Gnius" (Xolo).</li>
+                                                <li>Revisar que la presentación de diapositivas (1-10) esté cargada.</li>
+                                                <li>Confirmar que todos los kits de hardware están completos y listos para ser usados en parejas.</li>
                                             </ul>
                                         </li>
-                                        <li><strong>Familiarización Conceptual y Técnica:</strong>
-                                            <ul>
-                                                <li>Revisar el flujo de esta sesión, enfocándose en los conceptos clave que Xolo introducirá (sintaxis Python, indentación, PWM, `time.sleep_ms()`).</li>
-                                                <li>Comprender el código Python generado por Xolo para esta misión.</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Preparación de la Demostración Práctica:</strong>
-                                            <ul>
-                                                <li>Tener un Micro:bit con IOTbit y LEDs ya programado con un parpadeo básico o un pulso suave (como el del ejemplo de Xolo) para demostrar el control de salidas.</li>
-                                            </ul>
-                                        </li>
+                                        <li><strong>Familiarización Conceptual y Técnica:</strong> Revisar el flujo de esta sesión, enfocándose en los conceptos que Xolo introducirá (abstracción, control, indentación, `import`).</li>
+                                        <li><strong>Preparación de la Demostración Práctica:</strong> Tener un proyecto 100% funcional del parpadeo del LED listo para mostrar como ejemplo si es necesario.</li>
                                     </ol>
                                 </td>
                             </tr>
@@ -133,25 +126,25 @@
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Bienvenida e Introducción a la Misión</h3>
+                            <h3>Paso 1: Bienvenida y Contexto Estratégico</h3>
                             <p>(Proyectar Diapositiva 2) El facilitador da la bienvenida y presenta el enfoque estratégico de la misión del día.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">"Equipo, buenos días. Bienvenidos a la misión de hoy. Iniciamos un punto de inflexión en su viaje tecnológico: la transición a MicroPython, un lenguaje textual. Este cambio es crucial para interactuar con la tecnología a un nivel más profundo, como ingenieros y científicos de datos."</p>
+                                <p class="dialogue assistant">Buenos días, desarrolladores. Hoy comenzamos una etapa fundamental en su trayectoria como arquitectos tecnológicos. Daremos el salto de los entornos visuales a la programación textual, el lenguaje universal de la ingeniería de software.</p>
                             </div>
                         </div>
                     </div>
-                      <div class="step-card">
+                    <div class="step-card">
                         <div class="step-content">
                             <h3>Paso 2: Activación y Personalización de Xolo</h3>
-                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo **individual**, proporcionando a Xolo la información necesaria para la personalización.</p>
+                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo individual, proporcionando a Xolo la información necesaria para la personalización.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">"Para iniciar, de forma **individual**, activen a su socio técnico, Xolo. En el chat, proporcionen su **perfil de aprendizaje** (Piloto, Ingeniero, Biologista, Navigator, Comunicador, Científico) y sus **intereses personales**. Ejemplo: <strong>'Hola Xolo, soy [Tu Nombre], perfil Ingeniero y me interesan los motores y la Fórmula 1. Listo.'</strong> Xolo usará esto para adaptar sus explicaciones. Confirmen haber recibido su saludo."</p>
+                                <p class="dialogue assistant">Para iniciar, y de forma individual, es fundamental que activen a su socio técnico, Xolo. En la interfaz del chat, deben proporcionarle dos datos clave. Primero, su perfil de aprendizaje de este año: Piloto, Ingeniero, Biologista, Navigator, Comunicador o Científico. Segundo, sus gustos e intereses personales. Por ejemplo: <strong>'Hola Xolo, soy Carlos, mi perfil es Navigator y me fascina la exploración espacial. Listo para la Misión 1.'</strong> Esta información permite a Xolo adaptar sus explicaciones. Por favor, procedan ahora, me aseguraré de que todos reciban confirmación.</p>
                             </div>
                         </div>
                     </div>
@@ -159,30 +152,30 @@
             </div>
 
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 7 minutos</h2>
+                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 5 minutos</h2>
                 <p>Clarificar las metas de aprendizaje y presentar el desafío técnico y conceptual del día.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Presentación del Desafío Conceptual y Técnico</h3>
-                            <p>(Proyectar Diapositiva 3) El facilitador introduce el concepto o la herramienta central de la sesión, contextualizando su relevancia profesional.</p>
+                            <h3>Paso 1: Presentación del Desafío Conceptual</h3>
+                            <p>(Proyectar Diapositiva 3) El facilitador introduce el concepto central de la sesión: la transición de bloques a texto.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">"Hoy nos sumergimos en la transición crucial de la programación visual a la textual. Comprenderán las diferencias y el porqué de este cambio. Nos centraremos en la capacidad de su Micro:bit para controlar salidas básicas, como los LEDs, utilizando código Python, y el rol de la IA en traducir su intención a este código."</p>
+                                <p class="dialogue assistant">La diferencia clave entre lo que han hecho hasta ahora y lo que harán hoy radica en la <strong>abstracción</strong> y el <strong>control</strong>. Con bloques, usaban representaciones visuales; con texto, escriben instrucciones directamente. Esto les da un control mucho más granular y acceso a funcionalidades que los bloques no pueden ofrecer. Es la transición de ser un usuario de una herramienta a ser el diseñador de la herramienta. Van a empezar a pensar como programadores.</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
                             <h3>Paso 2: "I Can Statement"</h3>
-                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión en un formato claro y orientado a la competencia.</p>
+                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">"Al finalizar, podrán: <strong>'Programar salidas básicas en MicroPython, identificar diferencias con la programación por bloques, y utilizar la IA para generar y analizar su primer script.'</strong>"</p>
+                                <p class="dialogue assistant">El objetivo de hoy es específico. Al finalizar esta sesión, podrán afirmar con competencia: <strong>'Yo puedo explicar las diferencias clave entre programación visual y textual, y puedo usar Vibe Coding para generar, analizar y depurar un script básico en MicroPython.'</strong></p>
                             </div>
                         </div>
                     </div>
@@ -191,29 +184,29 @@
 
             <div class="activity-card" id="activity-3">
                 <h2>⚡ Actividad 3: A.I. GYM (Trabajo Individual) ⏰ 10 minutos</h2>
-                <p>Facilitar un diálogo socrático profundo e individual entre cada estudiante y Xolo para construir el andamiaje conceptual.</p>
+                <p>Facilitar una sesión de aprendizaje profundo e individual entre cada estudiante y Xolo para construir el andamiaje conceptual.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Instrucción para el Aprendizaje Estratégico</h3>
-                            <p>(Proyectar Diapositiva 5) El facilitador dirige a los alumnos para que inicien su aprendizaje **individual** con Xolo.</p>
+                            <h3>Paso 1: Instrucción para el Aprendizaje Personalizado</h3>
+                            <p>(Proyectar Diapositiva 5) El facilitador dirige a los alumnos para que inicien su sesión de aprendizaje estructurada e individual con Xolo.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">"Iniciamos el A.I. GYM. De forma **individual**, cada uno aprenderá de Xolo sobre la transición a MicroPython. Usen este prompt: <strong>'Xolo, explícame las tres diferencias clave entre programar con bloques y escribir código en Python, y por qué el código textual es más poderoso.'</strong> Profundicen en su respuesta; no se limiten a la primera explicación."</p>
+                                <p class="dialogue assistant">Iniciamos el A.I. GYM. De forma individual, van a tener una sesión de aprendizaje personalizada con su socio de IA. El objetivo es construir su base de conocimientos en Python. Comiencen con el siguiente prompt: <strong>'Xolo, explícame qué es Vibe Coding en el contexto de Python. Aclara por qué la indentación es crucial y qué significa la instrucción `import`.'</strong></p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 2: Análisis y Profundización Conceptual</h3>
-                            <p>(Proyectar Diapositiva 6) El facilitador modera una breve discusión grupal para sintetizar los hallazgos individuales del A.I. GYM y propone preguntas para que los alumnos profundicen con Xolo.</p>
+                            <h3>Paso 2: Supervisión y Guía del Facilitador</h3>
+                            <p>El facilitador circula por el aula, supervisando el aprendizaje y sugiriendo preguntas de profundización a los estudiantes.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">"Ahora, analicen la explicación que Xolo les proporcionó individualmente. Si algún concepto no les queda claro, pídale a Xolo que lo explique de otra manera. Por ejemplo: <strong>'Xolo, explícame Sintaxis vs. Interfaz Visual con otra analogía.'</strong> o <strong>'¿Por qué la indentación es tan crítica?'</strong> El objetivo es la comprensión profunda de estos conceptos clave."</p>
+                                <p class="dialogue assistant">(Mientras circula) "Excelente. Veo que Xolo les está explicando la indentación. Una buena pregunta de seguimiento sería: <strong>'Xolo, dame un ejemplo de código con indentación correcta y otro con incorrecta para ver la diferencia.'</strong> O si ya están en el tema de librerías, pregunten: <strong>'¿Qué otras librerías comunes se usan en MicroPython además de `iotit` y `time`?'</strong> No se queden con la primera respuesta, profundicen en el diálogo."</p>
                             </div>
                         </div>
                     </div>
@@ -221,128 +214,54 @@
             </div>
 
             <div class="activity-card" id="activity-4">
-                 <h2>⚡ Actividad 4: Brain Spark (Trabajo en Equipo) ⏰ 22 minutos</h2>
-                <p>El facilitador supervisa la ejecución del "Flujo de Creación Aumentada" en equipos, desde el diseño hasta la implementación.</p>
+                 <h2>⚡ Actividad 4: Brain Spark (Trabajo en Parejas) ⏰ 20 minutos</h2>
+                <p>El facilitador supervisa la ejecución del "Flujo de Creación Aumentada" en parejas, desde el diseño hasta la implementación.</p>
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: Formación de Equipos e Instrucción</h3>
-                            <p>(Proyectar Diapositiva 7) El facilitador instruye a los alumnos a formar sus equipos de trabajo para el resto de la sesión.</p>
+                            <h3>Paso 1: Formación de Parejas e Instrucción</h3>
+                             <p>(Proyectar Diapositiva 6) El facilitador instruye a los alumnos a formar sus equipos de trabajo para el resto de la sesión.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">"Excelente trabajo individual. Ahora, pasemos al modo colaborativo. Formen sus equipos de proyecto de **2 personas**. Designen un gestor de proyecto. Todo el trabajo en Brain Spark y Gnius STORM se realizará en equipo."</p>
+                                <p class="dialogue assistant">Muy bien. Ahora, vamos a pasar al modo colaborativo. Por favor, formen equipos de dos. A partir de este momento, todo el trabajo en Brain Spark y Gnius STORM se realizará en estas parejas.</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 2: Ideación y Definición de la "Vibe" en Equipo</h3>
-                            <p>El equipo diseña una intención para un sistema simple de señalización con LEDs de la placa IOTbit y la describe a Xolo.</p>
+                            <h3>Paso 2: Diseño de la "Vibe" y Generación de Código</h3>
+                            <p>(Proyectar Diapositiva 7) Las parejas definen su 'vibe', se la comunican a Xolo y reciben el código Python.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">"Es hora del Brain Spark. En equipo, diseñen una 'vibe' para un sistema de señalización simple con LEDs de la placa IOTbit. Piensen en un patrón visual con un propósito. Describan su intención a Xolo con detalle. Ejemplo de input a Xolo: <strong>'Xolo, queremos una baliza de tráfico con pulso suave para el LED amarillo (P2) y un LED rojo (P8) fijo cuando esté 'listo'.'</strong>"</p>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Generación de Código por IA</h3>
-                            <p>(Proyectar Diapositiva 8) Xolo genera el esqueleto de código Python basado en la "vibe" del equipo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Xolo generará el esqueleto de código Python basado en su 'vibe'. Lo que se muestra a continuación es el tipo de código que Xolo generaría para esta lógica. Su tarea es analizarlo."</p>
-<pre>
-# Importamos las librerías necesarias para control de pines y tiempo
-
-from iotit import *
-
-import time
-
-# Definimos los pines de los LEDs como salidas
-
-# En la placa IOTbit: LED amarillo en P2, LED rojo en P8
-
-led_amarillo = Pin(Pin.P2, Pin.OUT)
-
-led_rojo = Pin(Pin.P8, Pin.OUT)
-
-# --- Configuración inicial del sistema ---
-
-def setup_system():
-
-    led_rojo.write_digital(1) # Encender el LED rojo al inicio para indicar "listo"
-
-    print("Sistema de baliza iniciado y listo.")
-
-    time.sleep(1) # Pequeña pausa para ver el indicador
-
-    led_rojo.write_digital(0) # Apagar el LED rojo para que no interfiera con la señalización
-
-# --- Función para el pulso suave del LED amarillo (ejemplo de abstracción) ---
-
-def pulso_suave_amarillo():
-
-    # Encender lentamente
-
-    for i in range(10): # Ajustar el rango para suavidad
-
-        led_amarillo.write_analog(i * 102) # PWM de 0 a 1023 (10 * 102 = 1020)
-
-        time.sleep_ms(30)
-
-    time.sleep_ms(500) # Mantener encendido por un momento
-
-    # Apagar lentamente
-
-    for i in range(10, -1, -1): # Desde 10 hasta 0
-
-        led_amarillo.write_analog(i * 102)
-
-        time.sleep_ms(30)
-
-# Ejecutamos la configuración inicial una vez
-
-setup_system()
-
-# Bucle principal que se ejecutará indefinidamente para la baliza
-
-while True:
-
-    pulso_suave_amarillo()
-
-    time.sleep_ms(1000) # Pausa entre cada pulso de baliza
-</pre>
-<p><em><!-- NOTA PARA EL FACILITADOR: Este es el código que Xolo generará para el equipo. No debe ser leído directamente a la clase, sino usado como referencia para la siguiente fase de análisis. --></em></p>
-                            </div>
-                        </div>
-                    </div>
-                     <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 4: Análisis de Código Guiado ("Taming the Genie Lvl 2")</h3>
-                            <p>(Proyectar Diapositiva 9) El equipo analiza el código generado por Xolo, profundizando en su estructura y lógica.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">"Analicen el código línea por línea. Pregúntenle a Xolo sobre la función `write_analog()`, el bucle `for` con `range(10, -1, -1)`, o la diferencia entre `sleep()` y `sleep_ms()`. También: <strong>'Xolo, ¿por qué creaste funciones como `setup_system()` y `pulso_suave_amarillo()`?'</strong> El objetivo es comprender la lógica arquitectónica del código generado."</p>
+                                 <p class="dialogue assistant">Ahora, en sus parejas, apliquen lo que aprendieron. Discutan y definan una 'vibe' para un programa simple que controle una salida básica de su IOTbit. Una vez que tengan una idea clara, un miembro del equipo debe describírsela a Xolo para que genere el código Python. Por ejemplo: <strong>'Xolo, queremos que el LED verde de la IOTbit se encienda un segundo, se apague medio segundo, y repita esto tres veces.'</strong></p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 5: Implementación y Debugging Colaborativo</h3>
-                            <p>(Proyectar Diapositiva 10) El equipo implementa el código en el Micro:bit y depura posibles errores con la asistencia de Xolo.</p>
+                            <h3>Paso 3: Análisis y "Taming the Genie"</h3>
+                             <p>(Proyectar Diapositiva 8) Las parejas analizan el código, lo implementan y lo prueban.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">"Implementen el script en MakeCode. Asegúrense de conexiones correctas de los LEDs. Carguen el programa y prueben. Si algo no funciona, describan el problema a Xolo. Ejemplo de problema: <strong>'Xolo, el LED amarillo parpadea, pero no hace el pulso suave. Se enciende y apaga de golpe.'</strong> Xolo les guiará en la depuración. Si el problema persiste, verifiquen la conexión a la placa IOTbit y revisen los valores del `range()` y la multiplicación en `write_analog()`. Consideren añadir un `print(i)` dentro de los bucles `for` para inspeccionar los valores."</p>
+                                 <p class="dialogue assistant">Una vez que Xolo les entregue el código, su tarea como equipo es analizarlo. Lean cada línea y discutan su propósito. Luego, trasladen el código al editor de Python en MakeCode, descárguenlo y pruébenlo en su hardware. Si alguna parte del código no tiene sentido, úsenlo como una oportunidad para preguntarle a Xolo y clarificar su entendimiento.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 4: Debugging Colaborativo</h3>
+                            <p>(Proyectar Diapositiva 9) Se guía a las parejas para que trabajen con Xolo en la solución de problemas.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">Si su programa no funciona como esperan, es un momento clave de aprendizaje. No intenten adivinar. Como equipo, formulen una descripción precisa del problema y del comportamiento observado, y preséntenla a Xolo. Por ejemplo: <strong>'Xolo, nuestro LED se enciende pero no se apaga. Este es el código que estamos usando. ¿Qué área deberíamos investigar?'</strong> Él les sugerirá áreas a revisar, como la indentación o la lógica de sus pausas.</p>
                             </div>
                         </div>
                     </div>
@@ -355,52 +274,49 @@ while True:
                 <div class="steps">
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 1: "Think" (Individual)</h3>
-                            <p>Instrucción para la reflexión individual sobre el proceso de aprendizaje.</p>
+                            <h3>Paso 1: Gnius STORM (Think - Individual)</h3>
+                            <p>(Proyectar Diapositiva 10) Instrucción para la reflexión individual sobre el proceso.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">"Individualmente, piensen: '¿Cuál fue su mayor 'aha moment' o desafío al trabajar con MicroPython hoy, en comparación con los bloques?'"</p>
+                                <p class="dialogue assistant">Bien, vamos a cerrar con una reflexión estructurada. Primero, de forma individual, tómense un minuto para pensar en estas dos preguntas: ¿Cuál fue el mayor desafío que enfrentaron hoy al pasar de bloques a texto? Y, ¿cuál fue el 'insight' o descubrimiento más importante que tuvieron al analizar el código o al interactuar con Xolo?</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 2: "Pair" (Parejas)</h3>
-                            <p>Instrucciones para la discusión en parejas.</p>
+                            <h3>Paso 2: Gnius STORM (Pair - Parejas)</h3>
+                            <p>Los alumnos comparten sus reflexiones con su compañero de equipo.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">"Ahora, discutan sus reflexiones con su compañero. Compartan 'aha moments' y desafíos. ¿Coincidieron en algo?"</p>
+                                <p class="dialogue assistant">Ahora, compartan esas reflexiones con su compañero de equipo. Tienen dos minutos para discutir sus desafíos y descubrimientos. Escuchen atentamente la perspectiva de su compañero.</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
-                            <h3>Paso 3: "Share" (Grupo)</h3>
-                            <p>El facilitador invita a algunos equipos a compartir sus conclusiones con la clase.</p>
+                            <h3>Paso 3: Gnius STORM (Share - Grupo)</h3>
+                            <p>Un portavoz de algunas parejas comparte un punto clave con la clase.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">"Algunos equipos, compartan con la clase las conclusiones de su diálogo. ¿Qué fue lo más revelador de esta primera inmersión en MicroPython?"</p>
-                                <p class="dialogue user"><strong>Equipo 1:</strong> "Para nosotros, fue entender que la indentación realmente *es* código. Un espacio mal puesto lo rompía todo. Eso nos dio mucha más conciencia de la precisión necesaria."</p>
-                                <p class="dialogue user"><strong>Equipo 2:</strong> "El concepto de las funciones fue muy potente. Nos dimos cuenta de que podemos 'empaquetar' un comportamiento complejo como el pulso suave y luego solo llamarlo por su nombre, sin repetir código. Eso es mucho más limpio."</p>
-                                <p class="dialogue user"><strong>Equipo 3:</strong> "El debugging fue un reto. Con los bloques, el error era más críptico, pero Xolo nos guió a entenderlo. La necesidad de revisar los valores que se generan nos hizo pensar de forma más analítica."</p>
+                                <p class="dialogue assistant">Finalmente, vamos a compartir con todo el grupo. Me gustaría escuchar de dos o tres parejas. ¿Qué 'insight' común o qué diferencia interesante encontraron en su discusión? ¿Qué fue lo más sorprendente de la transición a Python?</p>
                             </div>
                         </div>
                     </div>
                     <div class="step-card">
                         <div class="step-content">
                             <h3>Paso 4: Síntesis Final</h3>
-                            <p>El facilitador cierra la sesión con una reflexión consolidada sobre el aprendizaje del día.</p>
+                            <p>El facilitador cierra la sesión con una reflexión que conecta la actividad con la visión del programa.</p>
                         </div>
                         <div class="collapsible">
                             <button type="button" class="collapsible-button">Diálogo Sugerido</button>
                             <div class="collapsible-content">
-                                <p class="dialogue assistant">"Han dado un paso fundamental, escribiendo su primer código funcional en Python y pensando como arquitectos de software. Han comprendido la modularidad, precisión y el poder de traducir una intención compleja a código textual y depurarlo sistemáticamente. Esto es la esencia del 'Taming the Genie'. En la próxima sesión, sus sistemas empezarán a 'escuchar' el mundo a través de entradas digitales y tomar decisiones."</p>
+                                <p class="dialogue assistant">Excelente trabajo hoy. Han dado un paso crucial como desarrolladores, pasando de ser guiados por una interfaz a dar instrucciones directas. Han visto que el código no es una caja negra, sino una lógica que se puede leer, analizar y depurar. Más importante aún, han experimentado cómo colaborar con una IA, no como un buscador de respuestas, sino como un socio técnico que acelera su proceso. Esta habilidad de leer, entender y dirigir es fundamental. En la próxima sesión, construiremos sobre esta base y agregaremos la capacidad de respuesta, la toma de decisiones con lógica condicional.</p>
                             </div>
                         </div>
                     </div>
